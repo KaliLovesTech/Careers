@@ -12,6 +12,8 @@ bs4 = "*"
 black = "*"
 python-decouple = "*"
 psycopg2 = "*"
+pylint = "*"
+djlint = "*"
 
 [dev-packages]
 
