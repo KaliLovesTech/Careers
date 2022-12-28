@@ -7,13 +7,14 @@ name = "pypi"
 django = "*"
 pillow = "*"
 requests = "*"
-beautifulsoup4 = "*"
 bs4 = "*"
 black = "*"
 python-decouple = "*"
 psycopg2 = "*"
 pylint = "*"
 djlint = "*"
+django-bootstrap-v5 = "*"
+django-bootstrap4 = "*"
 
 [dev-packages]
 
