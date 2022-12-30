@@ -15,10 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from jobs import views
+from users.views import register
+from jobs import views as jobs_views
+from users import views as users_views
+
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", views.home, name="home_page"),
+    path("", jobs_views.home, name="home_page"),
+    path("register/", users_views.register, name="register"),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
